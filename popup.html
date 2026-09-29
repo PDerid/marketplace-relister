@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Marketplace Relister</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Opnieuw plaatsen</h1>
+      <p id="empty">Geen actief repost-concept.</p>
+      <section id="attempt" hidden>
+        <p id="title"></p>
+        <p id="status" class="subtle"></p>
+        <div class="actions">
+          <button id="open-source" class="secondary">Open origineel</button>
+          <button id="clear" class="secondary">Vergeet concept</button>
+        </div>
+      </section>
+      <p class="hint">De extensie plaatst nooit zonder de normale marketplace-stappen en jouw bevestiging.</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

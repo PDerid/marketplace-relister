@@ -1,0 +1,9 @@
+body { color: #102f55; font: 14px/1.4 Arial, sans-serif; margin: 0; width: 300px; }
+main { padding: 16px; }
+h1 { font-size: 18px; margin: 0 0 12px; }
+p { margin: 8px 0; }
+.subtle, .hint { color: #556b82; font-size: 13px; }
+.hint { border-top: 1px solid #dbe4ed; margin-top: 16px; padding-top: 12px; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+button { background: #0b4a8f; border: 1px solid #0b4a8f; border-radius: 5px; color: #fff; cursor: pointer; font: inherit; font-weight: 600; padding: 8px 10px; }
+button.secondary { background: #fff; color: #0b4a8f; }

@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Marketplace Relister",
+  "version": "0.1.0",
+  "description": "Kopieer een eigen zoekertje naar de normale plaatsingsflow.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": [
+    "https://*.2dehands.be/*",
+    "https://images.2dehands.com/*",
+    "https://*.hzcdn.io/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Marketplace Relister",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.2dehands.be/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
